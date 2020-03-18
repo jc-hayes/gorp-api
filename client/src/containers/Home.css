@@ -1,0 +1,18 @@
+.Home .lander {
+    padding: 0px 0px;
+    text-align: center;
+  }
+  
+  .Home .lander h1 {
+    padding: 40px 0px;
+    font-weight: 600;
+    font-family: "Nova Square";
+    font-size: 96px;
+    color: #1e4072;
+  }
+  
+  .Home .lander p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+  }
