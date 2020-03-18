@@ -37,7 +37,7 @@ async function handleSubmit(event) {
   setIsLoading(true);
 
   try {
-    await createTrailReport({ trailName });
+    await createTrailReport({ trailName, peakElevation, trailDuration, roundtripLength, elevationGain, description });
     props.history.push("/");
   } catch (e) {
     alert(e);
