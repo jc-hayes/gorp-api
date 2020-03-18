@@ -43,7 +43,7 @@ function App(props) {
       <Navbar fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">Home</Link>
+            <Link to="/">GORP</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

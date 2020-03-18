@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import API from "@aws-amplify/api";
 import "./Home.css";
@@ -59,7 +60,14 @@ export default function Home(props) {
       <div className="lander">
         <h1>GORP</h1>
         <p>Good Old Raisins and Peanuts (GORP) is a simple trail report app.</p>
-        <p>You are signed in.</p>
+        <LinkContainer to="/signup">
+          <Link>Create Account</Link>
+        </LinkContainer>
+        <br></br>
+        <br></br>
+        <LinkContainer to="/signin">
+          <Link>Sign In</Link>
+        </LinkContainer>      
       </div>
     );
   }
@@ -67,7 +75,7 @@ export default function Home(props) {
   function renderTrails() {
     return (
       <div className="trails">
-        <PageHeader>Your Trail Reports</PageHeader>
+        <h3>Your Trail Reports</h3>
         <ListGroup>
           {!isLoading && renderTrailsList(trails)}
         </ListGroup>

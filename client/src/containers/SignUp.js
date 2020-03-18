@@ -5,6 +5,8 @@ import {
   FormControl,
   ControlLabel
 } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../libs/hooksLib";
 import "./SignUp.css";
@@ -109,7 +111,7 @@ export default function SignUp(props) {
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
           {/* <ControlLabel>Password</ControlLabel> */}
-          <text>Password Requirements:</text>
+          <ControlLabel>Password Requirements</ControlLabel>
           <ul>
             <li>Minimum 8 characters</li>
             <li>Lowercase letter(s)</li>
@@ -141,6 +143,14 @@ export default function SignUp(props) {
         >
           Create Account
         </LoaderButton>
+        <br></br>
+        <div>
+        <center>
+        <LinkContainer to="/signin">
+          <Link>Sign In</Link>
+        </LinkContainer> 
+        </center>  
+      </div>
       </form>
     );
   }

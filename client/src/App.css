@@ -5,4 +5,6 @@
 
 .App .navbar-brand {
   font-family: 'Montserrat';
+  font-weight: bolder;
+  color: #ff7c1c;
 }
