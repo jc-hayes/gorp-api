@@ -68,7 +68,7 @@ functions:
     handler: list.main
     events:
       - http:
-          path: trails/{id}
+          path: trails
           method: get
           cors: true
           authorizer: aws_iam

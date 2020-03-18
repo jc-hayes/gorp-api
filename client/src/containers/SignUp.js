@@ -109,6 +109,13 @@ export default function SignUp(props) {
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
           {/* <ControlLabel>Password</ControlLabel> */}
+          <text>Password Requirements:</text>
+          <ul>
+            <li>Minimum 8 characters</li>
+            <li>Lowercase letter(s)</li>
+            <li>Uppercase letter(s)</li>
+            <li>At least one number</li>
+          </ul>
           <FormControl
             placeholder="Password"
             type="password"

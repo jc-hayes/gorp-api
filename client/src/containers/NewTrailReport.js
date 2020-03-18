@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
@@ -56,14 +56,14 @@ function createTrailReport(trailReport) {
       <div className="Home">
         <div className="lander">
             <h1>GORP</h1>
-            <p>* Required</p>
+            <p>All Fields Required</p>
         </div>
       </div> 
       <form onSubmit={handleSubmit}>
       <FormGroup controlId="trailName">
           <FormControl
             value={trailName}
-            placeholder="Name *"
+            placeholder="Name"
             onChange={e => setTrailName(e.target.value)}
           />
         </FormGroup>
