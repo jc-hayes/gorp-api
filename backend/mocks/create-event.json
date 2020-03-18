@@ -1,0 +1,8 @@
+{
+    "body": "{\"trailName\":\"Black Peak\",\"peakElevation\":\"10387\",\"trailDuration\":\"72\",\"roundtripLength\":\"36\",\"elevationGain\":\"8739\",\"description\":\"Hiked on 9/2018\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "9054eb9f-3c42-4f47-9567-e351d85784bc"
+      }
+    }
+  }
